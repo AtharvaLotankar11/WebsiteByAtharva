@@ -64,6 +64,9 @@ section {
     background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+#pilot, #cabin-crew, #luggage {
+    background: linear-gradient(to bottom right, #f8f8f8, #e0e0e0);
+}
 
 h1, h2 {
     margin-bottom: 10px;
