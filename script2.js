@@ -1,20 +1,19 @@
-document.getElementById('toggleTheme').addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme');
-});
+// script2.js
 
-// Adding dark theme styles through JavaScript
-const style = document.createElement('style');
-style.innerHTML = `
-    .dark-theme {
-        background: linear-gradient(to right, #1c1c1c, #2c2c2c);
-        color: #ffffff;
-    }
-    .dark-theme button {
-        background-color: #3b3b3b;
-        color: white;
-    }
-    .dark-theme nav ul li a {
-        color: #ffffff;
-    }
-`;
-document.head.appendChild(style);
+// Function to toggle theme
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    // Optionally, save the user's choice in localStorage
+    localStorage.setItem('theme', newTheme);
+}
+
+// Add event listener to the toggle button
+document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+// Apply the saved theme from localStorage on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+});
