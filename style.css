@@ -39,6 +39,19 @@ nav ul li a:hover {
 .back-button:hover {
     background-color: #c9302c;
 }
+/* Dark mode styles */
+[data-theme='dark'] {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+[data-theme='dark'] header {
+    background-color: var(--header-background-dark);
+}
+
+[data-theme='dark'] a {
+    color: var(--text-dark);
+}
 
 section {
     padding: 20px;
