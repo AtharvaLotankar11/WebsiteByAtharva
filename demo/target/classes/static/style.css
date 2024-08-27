@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #87CEEB, #ffffff); /* Sky blue to white gradient */
+    color: #333;
+}
+
+header {
+    background: rgba(0, 51, 102, 0.8); /* Dark blue with transparency */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    background-color: #d9534f;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #c9302c;
+}
+/* Dark mode styles */
+[data-theme='dark'] {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+[data-theme='dark'] header {
+    background-color: var(--header-background-dark);
+}
+
+[data-theme='dark'] a {
+    color: var(--text-dark);
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#home {
+    background: linear-gradient(to bottom right, #ffcc00, #ff6699); /* Warm gradient */
+    text-align: center;
+    color: white;
+}
+
+#reservation {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about, #contact {
+    background: linear-gradient(to bottom right, #f8f8f8, #e0e0e0); /* Light gray gradient */
+}
+
+#history {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#statistics {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#risks-benefits {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#pilot, #cabin-crew, #luggage {
+    background: linear-gradient(to bottom right, #f8f8f8, #e0e0e0);
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+button {
+    width: calc(100% - 22px); /* Full width with padding */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007BFF; /* Bootstrap blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    button {
+        width: 100%; /* Full width on small screens */
+    }
+}
